@@ -1,0 +1,133 @@
+<mat-drawer-container class="main-container" autosize>
+  <mat-drawer #leftDrawer class="sidenav" mode="side">
+    <div class="header">Chart settings</div>
+    <div class="container">
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Settings
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="sub-container">
+            <mat-form-field>
+              <mat-label>Country</mat-label>
+              <mat-select>
+                <mat-option value="test">
+                  Some value
+                </mat-option>
+                <mat-option value="test">
+                  Some value 2
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>Product line</mat-label>
+              <mat-select>
+                <mat-option value="test">
+                  Some value
+                </mat-option>
+                <mat-option value="test">
+                  Some value 2
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Settings 2
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="sub-container">
+            <mat-form-field>
+              <mat-label>Country</mat-label>
+              <mat-select>
+                <mat-option value="test">
+                  Some value
+                </mat-option>
+                <mat-option value="test">
+                  Some value 2
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>Product line</mat-label>
+              <mat-select>
+                <mat-option value="test">
+                  Some value
+                </mat-option>
+                <mat-option value="test">
+                  Some value 2
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </mat-drawer>
+
+  <div class="content">
+    <button
+      type="button"
+      class="sidenav-left-toggle"
+      mat-button
+      (click)="leftDrawer.toggle()"
+    >
+      <mat-icon *ngIf="leftDrawer.opened" class="white-icon theme-background"
+        >keyboard_arrow_left
+      </mat-icon>
+      <mat-icon *ngIf="!leftDrawer.opened" class="white-icon theme-background"
+        >keyboard_arrow_right
+      </mat-icon>
+    </button>
+    <button
+      type="button"
+      class="sidenav-right-toggle"
+      mat-button
+      (click)="rightDrawer.toggle()"
+    >
+      <mat-icon *ngIf="!rightDrawer.opened" class="white-icon theme-background"
+        >keyboard_arrow_left
+      </mat-icon>
+      <mat-icon *ngIf="rightDrawer.opened" class="white-icon theme-background"
+        >keyboard_arrow_right
+      </mat-icon>
+    </button>
+    <app-charts-area></app-charts-area>
+  </div>
+
+  <mat-drawer #rightDrawer class="sidenav" mode="side" position="end">
+    <div class="header">Details settings</div>
+    <div class="container">
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Fruits
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="sub-container">
+            <mat-slide-toggle>Apple</mat-slide-toggle>
+            <mat-slide-toggle>Strawberry</mat-slide-toggle>
+            <mat-slide-toggle>Orange</mat-slide-toggle>
+          </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Fruits 2
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="sub-container">
+            <mat-slide-toggle>Banana</mat-slide-toggle>
+            <mat-slide-toggle>Raspberry</mat-slide-toggle>
+            <mat-slide-toggle>Peach</mat-slide-toggle>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </mat-drawer>
+</mat-drawer-container>

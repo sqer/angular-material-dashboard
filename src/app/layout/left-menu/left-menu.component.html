@@ -1,0 +1,8 @@
+<div class="left-menu">
+  <button *ngFor="let item of menuItems"
+    mat-icon-button
+    [attr.aria-label]="item.label"
+  >
+    <mat-icon class="white-icon">{{item.icon}}</mat-icon>
+  </button>
+</div>

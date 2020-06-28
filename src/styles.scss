@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+@import "variables.scss";
+@import "https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed|IBM+Plex+Sans:400,600&display=swap";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.white-icon {
+  color: $white;
+}
+
+.theme-background {
+  background: $theme-color;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  max-width: 100%;
+}
+
+.sidenav-left-toggle.mat-button,
+.sidenav-right-toggle.mat-button {
+  position: absolute;
+  min-width: 23px;
+  padding: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 999;
+}
+
+.sidenav-left-toggle.mat-button {
+  left: 0;
+}
+
+.sidenav-right-toggle.mat-button {
+  right: 0;
+}
+
+
+.header {
+  background: $theme-color;
+  color: $white;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+}

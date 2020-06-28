@@ -1,0 +1,22 @@
+@import "../../variables.scss";
+
+
+:host{
+  height: 100%;
+}
+
+.main-container{
+  height: 100%;
+}
+
+
+.sidenav .container{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+
+  .sub-container{
+    display: flex;
+    flex-direction: column;
+  }
+}

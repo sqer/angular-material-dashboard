@@ -1,0 +1,11 @@
+@import "../../../variables.scss";
+
+.left-menu {
+  height: 100%;
+  width: 40px;
+  background: $theme-color;
+
+  button:first-of-type {
+    margin-top: 80px;
+  }
+}
